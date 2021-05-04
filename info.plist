@@ -90,13 +90,7 @@ export PATH=&quot;/usr/local/bin:$PATH&quot;
 				<string>export PATH=&quot;/usr/local/bin:$PATH&quot;
 query=`echo &quot;{query}&quot; |  awk &apos;{gsub(/.\(output\)/,&quot;&quot;);}1&apos; | sed &apos;s/(\s)+$//&apos;`
 SwitchAudioSource -s &quot;$query&quot;
-sleep 1
-say $query &amp;
-terminal-notifier \
-    -message &quot;Change sound output to $query&quot; \
-    -appIcon ./icon.png \
-    -sender com.runningwithcrayons.Alfred-3 \
-    -title &quot;Alfred&quot;</string>
+say -v Fred stereo</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
